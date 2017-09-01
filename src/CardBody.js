@@ -5,39 +5,32 @@ import { mapToCssModules } from './utils';
 
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  type: PropTypes.string,
   className: PropTypes.string,
   cssModule: PropTypes.object,
-  children: PropTypes.node,
 };
 
 const defaultProps = {
-  tag: 'button',
-  type: 'button'
+  tag: 'div'
 };
 
-const NavbarToggler = (props) => {
+const CardBody = (props) => {
   const {
     className,
     cssModule,
-    children,
     tag: Tag,
     ...attributes
   } = props;
-
   const classes = mapToCssModules(classNames(
     className,
-    'navbar-toggler'
+    'card-body'
   ), cssModule);
 
   return (
-    <Tag {...attributes} className={classes}>
-      {children || <span className={mapToCssModules('navbar-toggler-icon', cssModule)} />}
-    </Tag>
+    <Tag {...attributes} className={classes} />
   );
 };
 
-NavbarToggler.propTypes = propTypes;
-NavbarToggler.defaultProps = defaultProps;
+CardBody.propTypes = propTypes;
+CardBody.defaultProps = defaultProps;
 
-export default NavbarToggler;
+export default CardBody;

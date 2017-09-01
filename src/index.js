@@ -24,6 +24,7 @@ import Card from './Card';
 import CardGroup from './CardGroup';
 import CardDeck from './CardDeck';
 import CardColumns from './CardColumns';
+import CardBody from './CardBody';
 import CardBlock from './CardBlock';
 import CardLink from './CardLink';
 import CardFooter from './CardFooter';
@@ -39,7 +40,9 @@ import CardSubtitle from './CardSubtitle';
 import CardText from './CardText';
 import CardTitle from './CardTitle';
 import Popover from './Popover';
+import PopoverHeader from './PopoverHeader';
 import PopoverTitle from './PopoverTitle';
+import PopoverBody from './PopoverBody';
 import PopoverContent from './PopoverContent';
 import Progress from './Progress';
 import Modal from './Modal';
@@ -108,6 +111,7 @@ export {
   CardGroup,
   CardDeck,
   CardColumns,
+  CardBody,
   CardBlock,
   CardFooter,
   CardHeader,
@@ -123,7 +127,9 @@ export {
   CardTitle,
   Popover,
   PopoverContent,
+  PopoverBody,
   PopoverTitle,
+  PopoverHeader,
   Progress,
   Modal,
   ModalHeader,

@@ -5,39 +5,33 @@ import { mapToCssModules } from './utils';
 
 const propTypes = {
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  type: PropTypes.string,
   className: PropTypes.string,
   cssModule: PropTypes.object,
-  children: PropTypes.node,
 };
 
 const defaultProps = {
-  tag: 'button',
-  type: 'button'
+  tag: 'h3'
 };
 
-const NavbarToggler = (props) => {
+const PopoverHeader = (props) => {
   const {
     className,
     cssModule,
-    children,
     tag: Tag,
     ...attributes
   } = props;
 
   const classes = mapToCssModules(classNames(
     className,
-    'navbar-toggler'
+    'popover-header'
   ), cssModule);
 
   return (
-    <Tag {...attributes} className={classes}>
-      {children || <span className={mapToCssModules('navbar-toggler-icon', cssModule)} />}
-    </Tag>
+    <Tag {...attributes} className={classes} />
   );
 };
 
-NavbarToggler.propTypes = propTypes;
-NavbarToggler.defaultProps = defaultProps;
+PopoverHeader.propTypes = propTypes;
+PopoverHeader.defaultProps = defaultProps;
 
-export default NavbarToggler;
+export default PopoverHeader;
