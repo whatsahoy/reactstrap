@@ -1,6 +1,6 @@
 {
   "name": "ahoy-reactstrap",
-  "version": "5.0.0-alpha",
+  "version": "5.0.1-alpha",
   "description": "React Bootstrap 4 components",
   "main": "dist/reactstrap.cjs.js",
   "jsnext:main": "dist/reactstrap.es.js",
